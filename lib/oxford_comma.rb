@@ -3,5 +3,8 @@ def oxford_comma(array)
     ["kiwi"].join
   elsif array.length == 2
    array.join(" and ")
+ elsif array.length == 3
+   array.insert (-1, "and")
+   array.join(", ")
 end
 end
